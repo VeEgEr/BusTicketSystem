@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false"
+    android:background="@drawable/background4"
+    tools:context=".BusListing"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bus_time_selection_fromwhere_text"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="From Where"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            android:background="#38394C"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            />
+
+        <ImageView
+            android:src="@drawable/arrow"
+            android:id="@+id/bustimeselection_ok"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="-->"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:textSize="30dp"
+            android:layout_toEndOf="@+id/bus_time_selection_fromwhere_text"
+            android:layout_toRightOf="@id/bus_time_selection_fromwhere_text"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/bus_time_selection_towhere_text"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="To Where"
+            android:paddingTop="5dp"
+            android:layout_toRightOf="@id/bustimeselection_ok"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:background="#38394C"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/bustimeselection_date_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Date"
+            android:layout_below="@+id/bustimeselection_ok"
+            android:gravity="center"
+            android:background="#38394C"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            />
+        />
+
+        <TextView
+            android:layout_marginTop="120dp"
+            android:id="@+id/bustimeselection_departuretime_text"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Departure Time"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="120dp"
+            android:id="@+id/bustimeselection_bustype_text"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Bus Type"
+            android:layout_toRightOf="@+id/bustimeselection_departuretime_text"
+            android:paddingLeft="40dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="120dp"
+            android:id="@+id/bustimeselection_price_text"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Price"
+            android:layout_toRightOf="@+id/bustimeselection_bustype_text"
+            android:paddingLeft="60dp"
+            android:textStyle="bold"/>
+
+        <ListView
+            android:id="@+id/bustimeselection_departuretime_listview"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/bustimeselection_departuretime_text"
+            >
+        </ListView>
+
+
+
+    </RelativeLayout>
+</ScrollView>

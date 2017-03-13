@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    android:orientation="vertical"
+    tools:context=".BookingTicket">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REZERVATION"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:id="@+id/rezerve_customerınformation_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:background="#fffff0"
+        android:hint="Write Customer Name"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/rezerve_customerınformation_lastname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#fffff0"
+        android:hint="Write Customer Surname"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/rezerve_customerınformation_bookingbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:background="#38394C"
+        android:text="Booking"
+        android:textColor="#ffff" />
+
+
+    <Button
+        android:id="@+id/goBackMainFromBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goBackMainFromBooking"
+        android:text="GO BACK"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:background="#38394C"
+        android:textColor="#ffff"/>
+
+    <TextView
+        android:id="@+id/rezerve_customerınformation_view"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

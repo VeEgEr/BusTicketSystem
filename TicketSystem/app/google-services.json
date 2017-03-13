@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1091946775844",
+    "firebase_url": "https://ticketsystem-331.firebaseio.com",
+    "project_id": "ticketsystem-331",
+    "storage_bucket": "ticketsystem-331.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091946775844:android:e54f1d0b0a8ce3d5",
+        "android_client_info": {
+          "package_name": "com.example.veyisegemenerden.ticketsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091946775844-34id8fucnpu50vcqq207mkknvlpod16c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGd5S1nfw7NZUo6o0Wgk482JgKZaWMhUI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

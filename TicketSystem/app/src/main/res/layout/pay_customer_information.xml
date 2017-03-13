@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false"
+        tools:context=".BuyTicket"
+    android:background="@drawable/background4">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="PAYING"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/pay_customerinformation_name_edit"
+        android:hint="Write Customer Name"
+        android:layout_marginTop="60dp"
+        android:background="#fffff0"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/pay_customerinformation_lastname_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Write Customer Surname"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/pay_customerinformation_name_edit"
+        android:background="#fffff0"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+
+    <EditText
+        android:textAlignment="center"
+        android:id="@+id/pay_customerinformation_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Card Number"
+        android:layout_below="@+id/pay_customerinformation_lastname_edit"
+        android:background="#fffff0"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+
+    <Button
+        android:id="@+id/pay_customerinformation_buybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Ticket"
+        android:textColor="#ffff"
+        android:layout_marginTop="35dp"
+        android:background="#38394C"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:onClick="goBackMainFromBuy"
+        android:layout_gravity="center"
+        android:text="GO BACK"
+        android:id="@+id/pay_customerinformation_goback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:layout_marginTop="15dp"
+        android:background="#38394C"
+       android:gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/pay_ticket_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/extratab"
+    android:background="@drawable/background4">
+
+
+
+
+    <Button
+        android:id="@+id/phone_button"
+        android:onClick="extra_phone"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="Contact"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/suboffice_button"
+        android:onClick="extra_suboffice"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="Suboffices"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

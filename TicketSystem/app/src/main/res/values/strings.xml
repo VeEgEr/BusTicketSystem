@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TicketSystem</string>
+    <string name="regsiter">REGISTER</string>
+    <string name="login">Login</string>
+    <string name="withoutLogin">withoutLogin</string>
+    <string name="confirm">Confirm</string>
+    <string name="buy">Buy Ticket</string>
+    <string name="rezerve">Reservation</string>
+
+</resources>

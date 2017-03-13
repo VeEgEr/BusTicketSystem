@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@drawable/background4"
+    android:fillViewport="false"
+    android:id="@+id/profil_tab"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profil_ımage"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/profil_information_textview"
+            android:layout_below="@+id/profil_ımage"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Profile Information"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:background="#fffff0"
+            android:hint="Name"
+            android:id="@+id/profil_name_edit"
+            android:layout_below="@+id/profil_information_textview"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <EditText
+            android:background="#fffff0"
+            android:hint="Last Name"
+            android:id="@+id/profil_lastname_edit"
+            android:layout_below="@+id/profil_name_edit"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <EditText
+            android:background="#fffff0"
+            android:hint="E-mail"
+            android:id="@+id/profil_email_edit"
+            android:layout_below="@+id/profil_lastname_edit"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:background="#fffff0"
+            android:id="@+id/profil_gender_textview"
+            android:layout_below="@+id/profil_email_edit"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:paddingTop="8dp"
+            android:text="Gender"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <Button
+
+            android:background="#38394C"
+            android:id="@+id/profil_set_button"
+            android:layout_below="@+id/profil_gender_textview"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:onClick="setProfil"
+            android:text="Set"
+            android:textColor="#ffff" />
+
+        <Button
+            android:background="#38394C"
+            android:id="@+id/profil_logout_button"
+            android:layout_below="@+id/profil_set_button"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:onClick="profileSignoutForUser"
+            android:text="Logout"
+            android:textColor="#ffff" />
+
+        <RadioGroup
+            android:id="@+id/profil_gender_radiogrup"
+            android:layout_alignBottom="@+id/profil_gender_textview"
+            android:layout_alignEnd="@+id/profil_email_edit"
+            android:layout_alignRight="@+id/profil_email_edit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/profil_male_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/profil_female_button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+    </RelativeLayout>
+</ScrollView>
